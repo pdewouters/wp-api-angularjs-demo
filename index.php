@@ -2,7 +2,7 @@
 <html ng-app="constellationsApp" lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>WP API AngularJS Demo</title>
 	<?php wp_head(); ?>
 </head>
 
