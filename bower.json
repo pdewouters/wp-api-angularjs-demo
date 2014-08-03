@@ -1,0 +1,25 @@
+{
+  "name": "wpapi-angularjs-demo",
+  "version": "0.1.0",
+  "authors": [
+    "Paul de Wouters <paul@hmn.md>"
+  ],
+  "description": "WP API AngularJS demo",
+  "main": "index.php",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "ng-tags-input": "~2.0.1",
+    "angular-sanitize": "~1.2.21",
+    "angular-resource": "~1.2.21",
+    "angular": "~1.2.21"
+  }
+}
