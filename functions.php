@@ -20,3 +20,7 @@ add_action( 'wp_enqueue_scripts', function(){
 	wp_enqueue_script( 'wpc-app' );
 
 });
+
+require_once get_template_directory() . '/includes/stars/post-type.php';
+require_once get_template_directory() . '/includes/stars/taxonomy.php';
+require_once get_template_directory() . '/includes/stars/class-stars-wp-api.php';
