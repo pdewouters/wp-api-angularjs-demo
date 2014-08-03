@@ -6,17 +6,6 @@ module.exports = function(grunt) {
 
 	var banner = '/**\n * WP API AngularJS Demo\n * http://paulwp.com\n *\n * Copyright (c) 2014\n This file was generated automatically. Do not edit directly.\n */\n';
 
-	var includesPath = 'includes/js/';
-
-	var themeScripts = [
-		includesPath + 'angular/angular.min.js',
-		includesPath + 'angular-resource/angular-resource.min.js',
-		includesPath + 'angular-sanitize/angular-sanitize.min.js',
-		includesPath + 'ng-tags-input/ng-tags-input.min.js',
-		includesPath + 'checklist-model.js',
-		includesPath + 'app.js'
-	];
-
 	grunt.initConfig({
 
 		uglify: {
@@ -24,11 +13,25 @@ module.exports = function(grunt) {
 				options: {
 					sourceMap: true,
 					banner: banner,
-					mangle: {},
+					mangle: {}
 				},
 				files: {
-					'includes/js/app.min.js': themeScripts
+					'includes/js/combined.min.js': 'includes/js/combined.js'
 				}
+			}
+		},
+
+		concat: {
+			js: {
+				src: [
+					//'includes/js/modules/angular/angular.js',
+					//'includes/js/modules/angular-route/angular-route.js',
+					'includes/js/modules/angular-sanitize/angular-sanitize.js',
+					'includes/js/modules/ng-tags-input/ng-tags-input.js',
+					'includes/js/checklist-model.js',
+					'includes/js/app.js'
+				],
+				dest: 'includes/js/combined.js'
 			}
 		}
 
