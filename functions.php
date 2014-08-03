@@ -21,6 +21,11 @@ add_action( 'wp_enqueue_scripts', function(){
 
 });
 
+// Register custom post type and taxonomy
 require_once get_template_directory() . '/includes/stars/post-type.php';
 require_once get_template_directory() . '/includes/stars/taxonomy.php';
 require_once get_template_directory() . '/includes/stars/class-stars-wp-api.php';
+
+// Github Starred repos importer
+require_once get_template_directory() . '/includes/importer/class-base-importer.php';
+require_once get_template_directory() . '/includes/importer/class-wpc-importer.php';
