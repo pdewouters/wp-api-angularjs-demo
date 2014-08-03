@@ -14,6 +14,8 @@ add_action( 'after_setup_theme', function() {
 add_action( 'wp_enqueue_scripts', function(){
 
 	wp_enqueue_style( 'foundation', 'http://cdn.foundation5.zurb.com/foundation.css' );
+	
+	wp_enqueue_style( 'ng-tabs', get_template_directory_uri() . '/includes/js/modules/ng-tags-input/ng-tags-input.min.css' );
 
 	wp_register_script( 'wpc-angular', get_template_directory_uri() . '/includes/js/modules/angular/angular.min.js', array(), THEME_VERSION );
 
