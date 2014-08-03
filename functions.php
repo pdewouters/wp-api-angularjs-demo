@@ -27,5 +27,6 @@ require_once get_template_directory() . '/includes/stars/taxonomy.php';
 require_once get_template_directory() . '/includes/stars/class-stars-wp-api.php';
 
 // Github Starred repos importer
-require_once get_template_directory() . '/includes/importer/class-base-importer.php';
-require_once get_template_directory() . '/includes/importer/class-wpc-importer.php';
+//require_once get_template_directory() . '/includes/vendor/autoload.php';
+//require_once get_template_directory() . '/includes/importer/class-base-importer.php';
+//require_once get_template_directory() . '/includes/importer/class-wpc-importer.php';
