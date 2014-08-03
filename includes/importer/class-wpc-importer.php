@@ -32,9 +32,9 @@ class WPC_Starred_Importer {
 
 	public static function get_instance() {
 
-		if ( ! ( self::$instance instanceof PDW_WPC_Starred_Importer ) ) {
+		if ( ! ( self::$instance instanceof WPC_Starred_Importer ) ) {
 
-			self::$instance = new PDW_WPC_Starred_Importer();
+			self::$instance = new WPC_Starred_Importer();
 			self::$instance->fields();
 			//self::$instance->schedule();
 			self::$instance->import();
@@ -100,7 +100,7 @@ class WPC_Starred_Importer {
 
 	protected function import() {
 
-		$importer = new PDW_WPC_Importer( $this->fields );
+		$importer = new WPC_Importer( $this->fields );
 
 		$this->fetch_data();
 

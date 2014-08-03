@@ -3,7 +3,7 @@
 /**
  * Generic Content Importer Class
  */
-class PDW_WPC_Importer {
+class WPC_Importer {
 
 	private $fields;
 
